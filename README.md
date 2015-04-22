@@ -8,9 +8,21 @@ The best Swiper component for React Native.
 
 - [x] Infinite loop
 
+![logo](https://d13yacurqjgara.cloudfront.net/users/60166/screenshots/1688473/sea_water.jpg)
+
+> @see [examples/loop](#11)
+
 - [x] Direction control
 
+![logo](https://d13yacurqjgara.cloudfront.net/users/60166/screenshots/1688473/sea_water.jpg)
+
+> @see [examples/loop](#11)
+
 - [x] Complete custom style
+
+![logo](https://d13yacurqjgara.cloudfront.net/users/60166/screenshots/1688473/sea_water.jpg)
+
+> @see [examples/loop](#11)
 
 - [x] Allow title display & custom
 
