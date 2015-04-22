@@ -30,19 +30,25 @@ The best Swiper component for React Native.
 
 ## Show Cases
 
-> You may very easy to try these cases by yourself. Just open `examples/swiper.xcodeproj` with Xcode, then press `Cmd + R`; you may edit `examples/index.ios.js` for switch cases.
+> Try these cases by yourself very easy. Just open `examples/swiper.xcodeproj` with Xcode, then press `Cmd + R`; you may edit `examples/index.ios.js` for switch cases.
 
-### [examples/basic](#11)
-
-describe...
-
-![](http://i.imgur.com/zrsazAG.gif)
-
-### [examples/swiper](#11)
+### [examples/basic.js](#11)
 
 describe...
 
-![](http://i.imgur.com/hP3f3oO.gif)
+![](http://i.imgur.com/zrsazAG.gif =375x)
+
+### [examples/swiper.js](#11)
+
+describe...
+
+![](http://i.imgur.com/hP3f3oO.gif =375x)
+
+### [examples/phone.js](#11)
+
+describe...
+
+![](http://i.imgur.com/c1BhjZm.gif =375x)
 
 ## Getting Started
 
