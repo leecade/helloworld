@@ -22,11 +22,15 @@ The best Swiper component for React Native.
 
 - [x] Autoplay
 
+- [x] Design logo
+
+- [x] More usage cases
+
 - [ ] More switch effects
 
 - [ ] Unit tests
 
-- [ ] logo
+- [ ] Check typo - Need Improve My English :(
 
 ## Show Cases
 
@@ -61,23 +65,62 @@ $ npm i react-native-swiper --save
 ### Basic Usage
 
 ```jsx
+var Swiper = require('react-native-swiper')
 
-import Swiper from 'react-native-swiper'
+// es6
+// import Swiper from 'react-native-swiper'
 
-// es5
-// var Swiper = require('react-native-swiper')
+var {
+  AppRegistry,
+} = React
 
-<Swiper style={styles.wrapper}>
-  <View>
-    <Text>Page 1</Text>
-  </View>
-  <View>
-    <Text>Page 2</Text>
-  </View>
-  <View>
-    <Text>Page 3</Text>
-  </View>
-</Swiper>
+var styles = StyleSheet.create({
+  wrapper: {
+  },
+  slide1: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#9DD6EB',
+  },
+  slide2: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#97CAE5',
+  },
+  slide3: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#92BBD9',
+  },
+  text: {
+    color: '#fff',
+    fontSize: 30,
+    fontWeight: 'bold',
+  }
+})
+
+var swiper = React.createClass({
+  render: function() {
+    return (
+      <Swiper style={styles.wrapper} showsButtons={true}>
+        <View style={styles.slide1}>
+          <Text style={styles.text}>Hello Swiper</Text>
+        </View>
+        <View style={styles.slide2}>
+          <Text style={styles.text}>Beautiful</Text>
+        </View>
+        <View style={styles.slide3}>
+          <Text style={styles.text}>And simple</Text>
+        </View>
+      </Swiper>
+    )
+  }
+})
+
+AppRegistry.registerComponent('swiper', () => swiper)
 ```
 
 ### Properties
@@ -86,65 +129,65 @@ import Swiper from 'react-native-swiper'
 
 | Prop  | Default  | Type | Describe |
 | :------------ |:---------------:| :---------------:| :-----|
-| horizontal | true | bool | xx |
-| loop | true | bool | xx |
-| index | 0 | number | xx |
-| showsButtons | false | bool | xx |
-| autoplay | false | bool | xx |
+| horizontal | true | bool | If `true`, the scroll view's children are arranged horizontally in a row instead of vertically in a column. |
+| loop | true | bool | Set to `true` to enable continuous loop mode. |
+| index | 0 | number | Index number of initial slide. |
+| showsButtons | false | bool | Set to `true` make control buttons visible. |
+| autoplay | false | bool | Set to `true` enable auto play mode. |
 
 #### Custom basic style & content
 
 | Prop  | Default  | Type | Describe |
 | :------------ |:---------------:| :---------------:| :-----|
-| width | - | number | default: fullscreen mode by `flex: 1` |
-| height | - | number | default: fullscreen mode by `flex: 1` |
-| style | {...} | react-styles | see default style in source |
+| width | - | number | If no specify default enable fullscreen mode by `flex: 1`. |
+| height | - | number | If no specify default fullscreen mode by `flex: 1`. |
+| style | {...} | react-styles | See default style in source. |
 
 #### Pagination
 
 | Prop  | Default  | Type | Describe |
 | :------------ |:---------------:| :---------------:| :-----|
-| showsPagination | true | bool | xx |
-| paginationStyle | {...} | react-style | xx |
-| dot | `<View style={{backgroundColor:'rgba(0,0,0,.2)', width: 8, height: 8,borderRadius: 4, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3,}} />` | react-dom | allow you custom the dot element |
-| activeDot | `<View style={{backgroundColor: '#007aff', width: 8, height: 8, borderRadius: 4, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3,}} />` | react-dom | allow you custom the active-dot element |
+| showsPagination | true | bool | Set to `true` make pagination visible. |
+| paginationStyle | {...} | react-style | Custom styles will merge with the default styles. |
+| dot | `<View style={{backgroundColor:'rgba(0,0,0,.2)', width: 8, height: 8,borderRadius: 4, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3,}} />` | react-dom | Allow custom the dot element |
+| activeDot | `<View style={{backgroundColor: '#007aff', width: 8, height: 8, borderRadius: 4, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3,}} />` | react-dom | Allow custom the active-dot element |
 
 #### Autoplay
 
 | Prop  | Default  | Type | Describe |
 | :------------ |:---------------:| :---------------:| :-----|
-| autoplay | true | bool | xx |
-| autoplayTimeout | 2.5 | number | interval(second) |
-| autoplayDirection | true | bool | cycle direction control |
+| autoplay | true | bool | Set to `true` enable auto play mode. |
+| autoplayTimeout | 2.5 | number | Delay between auto play transitions (in second). |
+| autoplayDirection | true | bool | Cycle direction control. |
 
 #### Control buttons
 
 | Prop  | Default  | Type | Describe |
 | :------------ |:---------------:| :---------------:| :-----|
-| showsButtons | true | bool | xx |
-| buttonWrapperStyle | `{backgroundColor: 'transparent', flexDirection: 'row', position: 'absolute', top: 0, left: 0, flex: 1, paddingHorizontal: 10, paddingVertical: 10, justifyContent: 'space-between', alignItems: 'center'}` | react-style | xx |
-| nextButton | `<Text style={[styles.buttonText, {color: !this.props.loop && this.state.index == this.state.total - 1 ? 'rgba(0,0,0,0)' : '#007aff'}]}>›</Text>` | react-dom | xx |
-| prevButton | `<Text style={[styles.buttonText, {color: !this.props.loop && this.state.index == 0 ? 'rgba(0,0,0,0)' : '#007aff'}]}>‹</Text>` | react-dom | xx |
+| showsButtons | true | bool | Set to `true` make control buttons visible. |
+| buttonWrapperStyle | `{backgroundColor: 'transparent', flexDirection: 'row', position: 'absolute', top: 0, left: 0, flex: 1, paddingHorizontal: 10, paddingVertical: 10, justifyContent: 'space-between', alignItems: 'center'}` | react-style | Custom styles. |
+| nextButton | `<Text style={[styles.buttonText, {color: !this.props.loop && this.state.index == this.state.total - 1 ? 'rgba(0,0,0,0)' : '#007aff'}]}>›</Text>` | react-dom | Allow custom the next button. |
+| prevButton | `<Text style={[styles.buttonText, {color: !this.props.loop && this.state.index == 0 ? 'rgba(0,0,0,0)' : '#007aff'}]}>‹</Text>` | react-dom | Allow custom the prev button. |
 
 #### Props of Children
 
 | Prop  | Default  | Type | Describe |
 | :------------ |:---------------:| :---------------:| :-----|
-| style | {...} | react-style | merge |
-| title | {<Text numberOfLines={1}>...</Text>} | `<Text />` | only show if |
+| style | {...} | react-style | Custom styles will merge with the default styles. |
+| title | {<Text numberOfLines={1}>...</Text>} | `<Text />` | If this parameter is not specified, will not render the title. |
 
 #### Basic props of `<ScrollView />`
 
 | Prop  | Default  | Type | Describe |
 | :------------ |:---------------:| :---------------:| :-----|
-| horizontal | true | bool | xx |
-| pagingEnabled | true | bool | xx |
-| showsHorizontalScrollIndicator | false | bool | xx |
-| showsVerticalScrollIndicator | false | bool | xx |
-| bounces | false | bool | xx |
-| scrollsToTop | false | bool | xx |
-| removeClippedSubviews | true | bool | xx |
-| automaticallyAdjustContentInsets | false | bool | xx |
+| horizontal | true | bool | If `true`, the scroll view's children are arranged horizontally in a row instead of vertically in a column. |
+| pagingEnabled | true | bool | If true, the scroll view stops on multiples of the scroll view's size when scrolling. This can be used for horizontal pagination.  |
+| showsHorizontalScrollIndicator | false | bool | Set to `true` if you want to show horizontal scroll bar. |
+| showsVerticalScrollIndicator | false | bool |  Set to `true` if you want to show vertical scroll bar. |
+| bounces | false | bool | If `true`, the scroll view bounces when it reaches the end of the content if the content is larger then the scroll view along the axis of the scroll direction. If `false`, it disables all bouncing even if the alwaysBounce* props are true.  |
+| scrollsToTop | false | bool | If true, the scroll view scrolls to top when the status bar is tapped.  |
+| removeClippedSubviews | true | bool | If true, offscreen child views (whose overflow value is hidden) are removed from their native backing superview when offscreen. This canimprove scrolling performance on long lists.  |
+| automaticallyAdjustContentInsets | false | bool | Set to `true` if you need adjust content insets automation. |
 
 > @see: http://facebook.github.io/react-native/docs/scrollview.html
 
@@ -163,6 +206,8 @@ import Swiper from 'react-native-swiper'
 
 ### Examples
 
+@TODO, see code in [examples](#1) first.
+
 ### Development
 
 ```bash
@@ -173,8 +218,8 @@ $ npm start
 
 - [@leecade](mailto:leecade@163.com) The main author.
 
-## Questions?
+## Questions
 
-Feel free to contact me in twitter or create an issue
+Feel free to [contact me](mailto:leecade@163.com) or [create an issue](#1)
 
-> Inspired by [nolimits4web/Swiper](https://github.com/nolimits4web/swiper/) & made with ♥.
+> Inspired by [nolimits4web/Swiper](https://github.com/nolimits4web/swiper/) & Design material from [Dribbble](https://dribbble.com/) & made with ♥.
