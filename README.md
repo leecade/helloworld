@@ -1,8 +1,8 @@
 # react-native-swiper
 
-![logo](https://d13yacurqjgara.cloudfront.net/users/60166/screenshots/1688473/sea_water.jpg)
-
 The best Swiper component for React Native.
+
+![logo](https://d13yacurqjgara.cloudfront.net/users/60166/screenshots/1688473/sea_water.jpg)
 
 ## FEAUTURE & TODO
 
@@ -30,16 +30,16 @@ The best Swiper component for React Native.
 
 ## Getting Started
 
-- [Installation](#Installation)
-- [Properties](#Properties)
-- [Examples](#Examples)
-- [Development](#Development)
+- [Installation](#installation)
+- [Properties](#properties)
+- [Examples](#examples)
+- [Development](#development)
 
 ### Installation
 
 ### Properties
 
-- Basic
+#### Basic
 
 | Prop  | Default  | Type | Describe |
 | :------------ |:---------------:| :---------------:| -----:|
@@ -47,7 +47,7 @@ The best Swiper component for React Native.
 | col 2 is      | centered        |   $12 | xx |
 | zebra stripes | are neat        |    $1 | xx |
 
-- Autoplay
+#### Autoplay
 
 | Prop  | Default  | Type | Describe |
 | :------------ |:---------------:| :---------------:| -----:|
