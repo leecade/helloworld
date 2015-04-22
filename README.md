@@ -34,21 +34,15 @@ The best Swiper component for React Native.
 
 ### [examples/basic.js](#11)
 
-describe...
-
-![](http://i.imgur.com/zrsazAG.gif =375x)
+![](http://i.imgur.com/zrsazAG.gif =300x)
 
 ### [examples/swiper.js](#11)
 
-describe...
-
-![](http://i.imgur.com/hP3f3oO.gif =375x)
+![](http://i.imgur.com/hP3f3oO.gif =300x)
 
 ### [examples/phone.js](#11)
 
-describe...
-
-![](http://i.imgur.com/c1BhjZm.gif =375x)
+![](http://i.imgur.com/c1BhjZm.gif =300x)
 
 ## Getting Started
 
