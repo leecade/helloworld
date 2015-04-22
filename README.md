@@ -41,53 +41,77 @@ The best Swiper component for React Native.
 
 #### Basic
 
-horizontal: true,
-pagingEnabled: true,
-showsHorizontalScrollIndicator: false,
-showsVerticalScrollIndicator: false,
-bounces: false,
-scrollsToTop: false,
-removeClippedSubviews: true,
-automaticallyAdjustContentInsets: false,
-showsPagination: true,
-showsButtons: false,
-loop: true,
-autoplay: true,
-autoplayTimeout: 2.5,
-autoplayDirection: true,
-index: 0,
-
 | Prop  | Default  | Type | Describe |
 | :------------ |:---------------:| :---------------:| -----:|
 | horizontal | true | bool | xx |
-| col 2 is      | centered        |   $12 | xx |
-| zebra stripes | are neat        |    $1 | xx |
+| loop | true | bool | xx |
+| index | 0 | number | xx |
+| showsButtons | false | bool | xx |
+| autoplay | false | bool | xx |
+
+#### Custom basic style & content
+
+| Prop  | Default  | Type | Describe |
+| :------------ |:---------------:| :---------------:| -----:|
+| width | - | number | default: fullscreen with `flex: 1` |
+| height | - | number | default: fullscreen with `flex: 1` |
+| style | {...} | react-styles | see default style in source |
+
+#### Pagination
+
+| Prop  | Default  | Type | Describe |
+| :------------ |:---------------:| :---------------:| -----:|
+| showsPagination | true | bool | xx |
+| dot | `<View style={{backgroundColor:'rgba(0,0,0,.2)', width: 8, height: 8,borderRadius: 4, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3,}} />` | react-dom | allow you custom the dot element |
+| activeDot | `<View style={{backgroundColor: '#007aff', width: 8, height: 8, borderRadius: 4, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3,}} />` | react-dom | allow you custom the active-dot element |
 
 #### Autoplay
 
 | Prop  | Default  | Type | Describe |
 | :------------ |:---------------:| :---------------:| -----:|
-| col 3 is      | some wordy text | $1600 | xx |
-| col 2 is      | centered        |   $12 | xx |
-| zebra stripes | are neat        |    $1 | xx |
+| autoplay | true | bool | xx |
+| autoplayTimeout | 2.5 | $12 | (second) |
+| autoplayDirection | true | bool | cicy direction control |
+
+#### Control buttons
+
+| Prop  | Default  | Type | Describe |
+| :------------ |:---------------:| :---------------:| -----:|
+| showsButtons | true | $1600 | xx |
+| showsButtons | true | $1600 | xx |
+
+#### Props of Children
+
+| Prop  | Default  | Type | Describe |
+| :------------ |:---------------:| :---------------:| -----:|
+| style | true | $1600 | merge |
+| title | {<Text numberOfLines={1}>...</Text>} | `<Text />` | only show if |
 
 #### Basic props of `<ScrollView />`
 
 | Prop  | Default  | Type | Describe |
 | :------------ |:---------------:| :---------------:| -----:|
 | horizontal | true | bool | xx |
-| col 2 is      | centered        |   $12 | xx |
-| zebra stripes | are neat        |    $1 | xx |
+| pagingEnabled | true | bool | xx |
+| showsHorizontalScrollIndicator | false | bool | xx |
+| showsVerticalScrollIndicator | false | bool | xx |
+| bounces | false | bool | xx |
+| scrollsToTop | false | bool | xx |
+| removeClippedSubviews | true | bool | xx |
+| automaticallyAdjustContentInsets | false | bool | xx |
 
 > @see: http://facebook.github.io/react-native/docs/scrollview.html
 
-#### Supports ScrollResponder
+#### Supported ScrollResponder
 
 | Prop  | Default  | Type | Describe |
 | :------------ |:---------------:| :---------------:| -----:|
-| col 3 is      | some wordy text | $1600 | xx |
-| col 2 is      | centered        |   $12 | xx |
-| zebra stripes | are neat        |    $1 | xx |
+| onMomentumScrollBegin | - | function | when animation begins after letting up |
+| onMomentumScrollEnd | - | function | Makes no sense why this occurs first during bounce |
+| onTouchStartCapture | - | function | immediately after `onMomentumScrollEnd` |
+| onTouchStart | - | function | same, but bubble phase |
+| onTouchEnd | - | function | You could hold the touch start for a long time |
+| onResponderRelease | - | function | when lifting up - you could pause forever before * lifting |
 
 > @see: https://github.com/facebook/react-native/blob/master/Libraries/Components/ScrollResponder.js
 
