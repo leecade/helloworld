@@ -30,17 +30,17 @@ The best Swiper component for React Native.
 
 ## Show Cases
 
-- custom style
+- [examples/custom](#11)
+
+describe...
 
 ![logo](https://d13yacurqjgara.cloudfront.net/users/60166/screenshots/1688473/sea_water.jpg)
 
-> @see [examples/loop](#11)
+- [examples/custom](#11)
 
-- case2
+describe...
 
 ![logo](https://d13yacurqjgara.cloudfront.net/users/60166/screenshots/1688473/sea_water.jpg)
-
-> @see [examples/loop](#11)
 
 ## Getting Started
 
@@ -172,5 +172,3 @@ import Swiper from 'react-native-swiper'
 Feel free to contact me in twitter or create an issue
 
 > Inspired by [nolimits4web/Swiper](https://github.com/nolimits4web/swiper/) & made with ♥.
-
-
