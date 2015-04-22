@@ -1,8 +1,8 @@
 # react-native-swiper
 
-The best Swiper component for React Native.
-
 ![logo](https://d13yacurqjgara.cloudfront.net/users/60166/screenshots/1688473/sea_water.jpg)
+
+The best Swiper component for React Native.
 
 ## FEAUTURE & TODO
 
@@ -41,9 +41,25 @@ The best Swiper component for React Native.
 
 #### Basic
 
+horizontal: true,
+pagingEnabled: true,
+showsHorizontalScrollIndicator: false,
+showsVerticalScrollIndicator: false,
+bounces: false,
+scrollsToTop: false,
+removeClippedSubviews: true,
+automaticallyAdjustContentInsets: false,
+showsPagination: true,
+showsButtons: false,
+loop: true,
+autoplay: true,
+autoplayTimeout: 2.5,
+autoplayDirection: true,
+index: 0,
+
 | Prop  | Default  | Type | Describe |
 | :------------ |:---------------:| :---------------:| -----:|
-| col 3 is      | some wordy text | $1600 | xx |
+| horizontal | true | bool | xx |
 | col 2 is      | centered        |   $12 | xx |
 | zebra stripes | are neat        |    $1 | xx |
 
@@ -54,6 +70,26 @@ The best Swiper component for React Native.
 | col 3 is      | some wordy text | $1600 | xx |
 | col 2 is      | centered        |   $12 | xx |
 | zebra stripes | are neat        |    $1 | xx |
+
+#### Basic props of <ScrollView />
+
+| Prop  | Default  | Type | Describe |
+| :------------ |:---------------:| :---------------:| -----:|
+| horizontal | true | bool | xx |
+| col 2 is      | centered        |   $12 | xx |
+| zebra stripes | are neat        |    $1 | xx |
+
+> more info: http://facebook.github.io/react-native/docs/scrollview.html
+
+#### Supports ScrollResponder
+
+| Prop  | Default  | Type | Describe |
+| :------------ |:---------------:| :---------------:| -----:|
+| col 3 is      | some wordy text | $1600 | xx |
+| col 2 is      | centered        |   $12 | xx |
+| zebra stripes | are neat        |    $1 | xx |
+
+> more info: https://github.com/facebook/react-native/blob/master/Libraries/Components/ScrollResponder.js
 
 ### Examples
 
