@@ -53,8 +53,8 @@ The best Swiper component for React Native.
 
 | Prop  | Default  | Type | Describe |
 | :------------ |:---------------:| :---------------:| :-----|
-| width | - | number | default: fullscreen with `flex: 1` |
-| height | - | number | default: fullscreen with `flex: 1` |
+| width | - | number | default: fullscreen mode by `flex: 1` |
+| height | - | number | default: fullscreen mode by `flex: 1` |
 | style | {...} | react-styles | see default style in source |
 
 #### Pagination
@@ -62,6 +62,7 @@ The best Swiper component for React Native.
 | Prop  | Default  | Type | Describe |
 | :------------ |:---------------:| :---------------:| :-----|
 | showsPagination | true | bool | xx |
+| paginationStyle | {...} | react-style | xx |
 | dot | `<View style={{backgroundColor:'rgba(0,0,0,.2)', width: 8, height: 8,borderRadius: 4, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3,}} />` | react-dom | allow you custom the dot element |
 | activeDot | `<View style={{backgroundColor: '#007aff', width: 8, height: 8, borderRadius: 4, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3,}} />` | react-dom | allow you custom the active-dot element |
 
@@ -70,15 +71,16 @@ The best Swiper component for React Native.
 | Prop  | Default  | Type | Describe |
 | :------------ |:---------------:| :---------------:| :-----|
 | autoplay | true | bool | xx |
-| autoplayTimeout | 2.5 | $12 | (second) |
-| autoplayDirection | true | bool | cicy direction control |
+| autoplayTimeout | 2.5 | number | interval(second) |
+| autoplayDirection | true | bool | cycle direction control |
 
 #### Control buttons
 
 | Prop  | Default  | Type | Describe |
 | :------------ |:---------------:| :---------------:| :-----|
-| showsButtons | true | $1600 | xx |
-| showsButtons | true | $1600 | xx |
+| showsButtons | true | bool | xx |
+| buttonWrapperStyle | `{backgroundColor: 'transparent', flexDirection: 'row', position: 'absolute', top: 0, left: 0, flex: 1, paddingHorizontal: 10, paddingVertical: 10, justifyContent: 'space-between', alignItems: 'center'}` | react-style | xx | | nextButton | `<Text style={[styles.buttonText, {color: !this.props.loop && this.state.index == this.state.total - 1 ? 'rgba(0,0,0,0)' : '#007aff'}]}>›</Text>` | react-dom | xx |
+| prevButton | `<Text style={[styles.buttonText, {color: !this.props.loop && this.state.index == 0 ? 'rgba(0,0,0,0)' : '#007aff'}]}>‹</Text>` | react-dom | xx |
 
 #### Props of Children
 
