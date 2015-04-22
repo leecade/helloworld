@@ -59,7 +59,7 @@ The best Swiper component for React Native.
   + [Autoplay](#autoplay)
   + [Control buttons](#control-buttons)
   + [Props of Children](#props-of-children)
-  + [Basic props of <ScrollView />](#basic-props-of-scrollview-)
+  + [Basic props of `<ScrollView />`](#basic-props-of-scrollview-)
   + [Supported ScrollResponder](#supported-scrollresponder)
 - [Examples](#examples)
 - [Development](#development)
