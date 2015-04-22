@@ -32,17 +32,17 @@ The best Swiper component for React Native.
 
 > You may very easy to try these cases by yourself. Just open `examples/swiper.xcodeproj` with Xcode, then press `Cmd + R`; you may edit `examples/index.ios.js` for switch cases.
 
-- [examples/custom](#11)
+### [examples/basic](#11)
 
 describe...
 
 ![](http://g.recordit.co/8pm7YtVlQJ.gif)
 
-- [examples/custom](#11)
+- [examples/swiper](#11)
 
 describe...
 
-![logo](https://d13yacurqjgara.cloudfront.net/users/60166/screenshots/1688473/sea_water.jpg)
+![](http://i.imgur.com/hP3f3oO.gif)
 
 ## Getting Started
 
@@ -130,7 +130,7 @@ import Swiper from 'react-native-swiper'
 
 | Prop  | Default  | Type | Describe |
 | :------------ |:---------------:| :---------------:| :-----|
-| style | true | $1600 | merge |
+| style | {...} | react-style | merge |
 | title | {<Text numberOfLines={1}>...</Text>} | `<Text />` | only show if |
 
 #### Basic props of `<ScrollView />`
