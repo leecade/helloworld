@@ -4,7 +4,7 @@
 
 The best Swiper component for React Native.
 
-## FEAUTURE & TODO
+## Feature & TODO
 
 - [x] Infinite loop
 
@@ -29,6 +29,8 @@ The best Swiper component for React Native.
 - [ ] logo
 
 ## Show Cases
+
+> You may very easy to try these cases by yourself. Just open `examples/swiper.xcodeproj` with Xcode, then press `Cmd + R`; you may edit `examples/index.ios.js` for switch cases.
 
 - [examples/custom](#11)
 
@@ -162,6 +164,10 @@ import Swiper from 'react-native-swiper'
 ### Examples
 
 ### Development
+
+```bash
+$ npm start
+```
 
 ## Contribution
 
