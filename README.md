@@ -36,7 +36,7 @@ The best Swiper component for React Native.
 
 describe...
 
-![logo](https://d13yacurqjgara.cloudfront.net/users/60166/screenshots/1688473/sea_water.jpg)
+![](http://g.recordit.co/8pm7YtVlQJ.gif)
 
 - [examples/custom](#11)
 
