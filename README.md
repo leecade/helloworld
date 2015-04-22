@@ -34,7 +34,7 @@ The best Swiper component for React Native.
 
 ## Show Cases
 
-> Try these cases by yourself very easy. Just open `examples/swiper.xcodeproj` with Xcode, then press `Cmd + R`; you may edit `examples/index.ios.js` for switch cases.
+> Try these cases by yourself very easy, Just open `examples/swiper.xcodeproj` with Xcode, then press `Cmd + R`; you may edit `examples/index.ios.js` for switch cases.
 
 ### [examples/basic.js](#11)
 
@@ -51,8 +51,16 @@ The best Swiper component for React Native.
 ## Getting Started
 
 - [Installation](#installation)
-- [Basic Usage](#installation)
+- [Basic Usage](#basic-usage)
 - [Properties](#properties)
+  + [Basic](#basic)
+  + [Custom basic style & content](#custom-basic-style--content)
+  + [Pagination](#pagination)
+  + [Autoplay](#autoplay)
+  + [Control buttons](#control-buttons)
+  + [Props of Children](#props-of-children)
+  + [Basic props of <ScrollView />](#basic-props-of-scrollview-)
+  + [Supported ScrollResponder](#supported-scrollresponder)
 - [Examples](#examples)
 - [Development](#development)
 
