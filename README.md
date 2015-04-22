@@ -43,11 +43,38 @@ The best Swiper component for React Native.
 ## Getting Started
 
 - [Installation](#installation)
+- [Basic Usage](#installation)
 - [Properties](#properties)
 - [Examples](#examples)
 - [Development](#development)
 
 ### Installation
+
+```bash
+$ npm i react-native-swiper --save
+```
+
+### Basic Usage
+
+```jsx
+
+import Swiper from 'react-native-swiper'
+
+// es5
+// var Swiper = require('react-native-swiper')
+
+<Swiper style={styles.wrapper}>
+  <View>
+    <Text>Page 1</Text>
+  </View>
+  <View>
+    <Text>Page 2</Text>
+  </View>
+  <View>
+    <Text>Page 3</Text>
+  </View>
+</Swiper>
+```
 
 ### Properties
 
