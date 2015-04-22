@@ -36,9 +36,9 @@ The best Swiper component for React Native.
 
 describe...
 
-![](http://g.recordit.co/8pm7YtVlQJ.gif)
+![](http://i.imgur.com/zrsazAG.gif)
 
-- [examples/swiper](#11)
+### [examples/swiper](#11)
 
 describe...
 
