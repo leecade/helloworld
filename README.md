@@ -42,7 +42,7 @@ The best Swiper component for React Native.
 #### Basic
 
 | Prop  | Default  | Type | Describe |
-| :------------ |:---------------:| :---------------:| -----:|
+| :------------ |:---------------:| :---------------:| :-----|
 | horizontal | true | bool | xx |
 | loop | true | bool | xx |
 | index | 0 | number | xx |
@@ -52,7 +52,7 @@ The best Swiper component for React Native.
 #### Custom basic style & content
 
 | Prop  | Default  | Type | Describe |
-| :------------ |:---------------:| :---------------:| -----:|
+| :------------ |:---------------:| :---------------:| :-----|
 | width | - | number | default: fullscreen with `flex: 1` |
 | height | - | number | default: fullscreen with `flex: 1` |
 | style | {...} | react-styles | see default style in source |
@@ -60,7 +60,7 @@ The best Swiper component for React Native.
 #### Pagination
 
 | Prop  | Default  | Type | Describe |
-| :------------ |:---------------:| :---------------:| -----:|
+| :------------ |:---------------:| :---------------:| :-----|
 | showsPagination | true | bool | xx |
 | dot | `<View style={{backgroundColor:'rgba(0,0,0,.2)', width: 8, height: 8,borderRadius: 4, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3,}} />` | react-dom | allow you custom the dot element |
 | activeDot | `<View style={{backgroundColor: '#007aff', width: 8, height: 8, borderRadius: 4, marginLeft: 3, marginRight: 3, marginTop: 3, marginBottom: 3,}} />` | react-dom | allow you custom the active-dot element |
@@ -68,7 +68,7 @@ The best Swiper component for React Native.
 #### Autoplay
 
 | Prop  | Default  | Type | Describe |
-| :------------ |:---------------:| :---------------:| -----:|
+| :------------ |:---------------:| :---------------:| :-----|
 | autoplay | true | bool | xx |
 | autoplayTimeout | 2.5 | $12 | (second) |
 | autoplayDirection | true | bool | cicy direction control |
@@ -76,21 +76,21 @@ The best Swiper component for React Native.
 #### Control buttons
 
 | Prop  | Default  | Type | Describe |
-| :------------ |:---------------:| :---------------:| -----:|
+| :------------ |:---------------:| :---------------:| :-----|
 | showsButtons | true | $1600 | xx |
 | showsButtons | true | $1600 | xx |
 
 #### Props of Children
 
 | Prop  | Default  | Type | Describe |
-| :------------ |:---------------:| :---------------:| -----:|
+| :------------ |:---------------:| :---------------:| :-----|
 | style | true | $1600 | merge |
 | title | {<Text numberOfLines={1}>...</Text>} | `<Text />` | only show if |
 
 #### Basic props of `<ScrollView />`
 
 | Prop  | Default  | Type | Describe |
-| :------------ |:---------------:| :---------------:| -----:|
+| :------------ |:---------------:| :---------------:| :-----|
 | horizontal | true | bool | xx |
 | pagingEnabled | true | bool | xx |
 | showsHorizontalScrollIndicator | false | bool | xx |
@@ -105,7 +105,7 @@ The best Swiper component for React Native.
 #### Supported ScrollResponder
 
 | Prop  | Default  | Type | Describe |
-| :------------ |:---------------:| :---------------:| -----:|
+| :------------ |:---------------:| :---------------:| :-----|
 | onMomentumScrollBegin | - | function | when animation begins after letting up |
 | onMomentumScrollEnd | - | function | Makes no sense why this occurs first during bounce |
 | onTouchStartCapture | - | function | immediately after `onMomentumScrollEnd` |
